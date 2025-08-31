@@ -1,0 +1,64 @@
+# venvs
+venv
+.venv
+
+projects
+demos
+eval[_-]results*
+
+# `tree --gitignore` wont handle the [_-] above
+eval-results*
+eval_results*
+
+# git worktrees for dev/ branches
+dev/
+
+# logs
+*.log
+*logs/
+logs*
+
+# fetched by make
+scripts/build_changelog.py
+
+# media files need to be force-fully added to not pollute the repo
+media/
+
+# build/test/prof/cache
+build
+dist
+prof
+tests/output
+docs/_build
+# exclude tagged versions
+docs/changelog/v*-*.md
+.coverage*
+coverage.xml
+htmlcov
+junit.xml
+__pycache__
+.*cache
+.cursor
+
+# secrets
+.env*
+*.env
+
+# filetypes
+*.csv
+*.jsonl
+*.gif
+*.cast
+*.png
+.aider*
+.clean
+
+
+# if you choose to keep ~/.config/gptme/config.toml in the repo
+config.toml
+
+# MacOS
+.DS_Store
+
+# VSCode
+.vscode
