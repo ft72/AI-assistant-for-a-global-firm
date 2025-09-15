@@ -49,7 +49,7 @@ deprecated = "^1.2.18"
 
 # providers
 openai = "^1.0"
-anthropic = "^0.47"
+anthropic = "^0.67"
 
 # tools
 ipython = "^8.17.2"
